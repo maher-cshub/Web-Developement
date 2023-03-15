@@ -307,7 +307,186 @@
         
     </pre>
 
+    <!--Tables-->
+    <hr/>
+    <h2>Tables</h2>
+    <hr/>
+    <pre>
 
+    //code
+    1 - Simple Table
+    &lt;table width="40%" height="100" border="2" bordercolor="red" cellspacing="2" cellpadding="2"&gt;
+        &lt;!--1 row--&gt;
+        &lt;tr&gt;
+            &lt;!--coloumns--&gt;
+            &lt;td&gt;hello&lt;/td&gt;
+            &lt;td&gt;welcome&lt;/td&gt;
+        &lt;/tr&gt;
+    
+        &lt;!--2 row--&gt;
+        &lt;tr&gt;
+            &lt;!--columns--&gt;
+            &lt;td&gt;bye&lt;/td&gt;
+            &lt;td&gt;see yaa&lt;/td&gt;
+        &lt;/tr&gt;
+ 
+    &lt;/table&gt;
+
+    2 - Nested Tables
+    &lt;!--parent--&gt;
+    &lt;table width="60%" height="100" border="10" bordercolor="green" cellspacing="8" cellpadding="10"&gt;
+        &lt;tr&gt;
+            &lt;td&gt;
+                &lt;!--child--&gt;
+            
+                &lt;table width="100%" height="100" border="10" bordercolor="red" cellspacing="8" cellpadding="10"&gt;
+                
+                    &lt;!--1 row--&gt;
+                    &lt;tr&gt;
+                        &lt;!--coloumns--&gt;
+                        &lt;td&gt;hello&lt;/td&gt;
+                        &lt;td&gt;welcome&lt;/td&gt;
+                    &lt;/tr&gt;
+                    
+                    &lt;!--2 row--&gt;
+                    &lt;tr&gt;
+                        &lt;!--columns--&gt;
+                        &lt;td&gt;bye&lt;/td&gt;
+                        &lt;td&gt;see yaa&lt;/td&gt;
+                    &lt;/tr&gt;
+
+                &lt;/table&gt;
+
+            &lt;/td&gt;
+
+        &lt;/tr&gt;
+    &lt;/table&gt;
+
+    3 -merging cells
+    &lt;table width="40%" height="100" border="2" bordercolor="red" cellspacing="2" cellpadding="2"&gt;
+        &lt;!--1 row--&gt;
+        &lt;tr&gt;
+        &lt;!--coloumns--&gt;
+        &lt;!--row where we want to merge 2 bcz 2 columns--&gt;
+        &lt;td colspan="2"&gt;hello&lt;/td&gt;
+        &lt;!--delete the uncompatible row--&gt;
+        &lt;/tr&gt;
+    
+        &lt;!--2 row--&gt;
+        &lt;tr&gt;
+        &lt;!--columns--&gt;
+        &lt;td&gt;bye&lt;/td&gt;
+        &lt;td&gt;see yaa&lt;/td&gt;
+        &lt;/tr&gt;
+ 
+    &lt;/table&gt;
+
+    4 - cell alignement
+    &lt;table width="40%" height="100" border="2" bordercolor="red" cellspacing="2" cellpadding="2" background=""&gt;
+        &lt;!--1 row--&gt;
+        &lt;tr&gt;
+        &lt;!--coloumns--&gt;
+        &lt;td align="center"&gt;hello&lt;/td&gt;
+        &lt;td align="justify"&gt;welcome&lt;/td&gt;
+        &lt;/tr&gt;
+    
+        &lt;!--2 row--&gt;
+        &lt;tr&gt;
+        &lt;!--columns--&gt;
+        &lt;td align="left"&gt;bye&lt;/td&gt;
+        &lt;td align="right"&gt;see yaa&lt;/td&gt;
+        &lt;/tr&gt;
+ 
+    &lt;/table&gt;
+
+    //output
+    
+    1 - Simple table
+    <table width="40%" height="100" border="2" bordercolor="red" cellspacing="2" cellpadding="2">
+        <!--1 row-->
+        <tr>
+           <!--coloumns-->
+           <td>hello</td>
+           <td>welcome</td>
+        </tr>
+     
+        <!--2 row-->
+        <tr>
+           <!--columns-->
+           <td>bye</td>
+           <td>see yaa</td>
+        </tr>
+     
+     </table>
+
+    2 - nested tables
+     <!--parent-->
+    <table width="60%" height="100" border="10" bordercolor="green" cellspacing="8" cellpadding="10">
+        <tr>
+            <td>
+                <!--child-->
+            
+                <table width="100%" height="100" border="10" bordercolor="red" cellspacing="8" cellpadding="10">
+                
+                    <!--1 row-->
+                    <tr>
+                        <!--coloumns-->
+                        <td>hello</td>
+                        <td>welcome</td>
+                    </tr>
+                    
+                    <!--2 row-->
+                    <tr>
+                        <!--columns-->
+                        <td>bye</td>
+                        <td>see yaa</td>
+                    </tr>
+
+                </table>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+    3 - merging cells
+    <table width="40%" height="100" border="2" bordercolor="red" cellspacing="2" cellpadding="2">
+        <!--1 row-->
+        <tr>
+           <!--coloumns-->
+           <!--row where we want to merge 2 bcz 2 columns-->
+           <td colspan="2">hello</td>
+           <!--delete the uncompatible row-->
+        </tr>
+     
+        <!--2 row-->
+        <tr>
+           <!--columns-->
+           <td>bye</td>
+           <td>see yaa</td>
+        </tr>
+     
+     </table>
+
+    
+    4 - cell alignement
+    <table width="40%" height="100" border="2" bordercolor="red" cellspacing="2" cellpadding="2" background="">
+        <!--1 row-->
+        <tr>
+           <!--coloumns-->
+           <td align="center">hello</td>
+           <td align="justify">welcome</td>
+        </tr>
+     
+        <!--2 row-->
+        <tr>
+           <!--columns-->
+           <td align="left">bye</td>
+           <td align="right">see yaa</td>
+        </tr>
+     
+     </table>
 
 
 </body>
