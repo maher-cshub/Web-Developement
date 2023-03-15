@@ -78,13 +78,11 @@
 
         //output
 
+        <code>
+            <div>this is a div in html</div>
+            <div title="div tootlip">div with tooltip in html</div>
+        </code>
     </pre>
-
-    <code>
-        <div>this is a div in html</div>
-        <div title="div tootlip">div with tooltip in html</div>
-    </code>
-
 
     <!--Paragraphs-->
     <hr/>
@@ -313,181 +311,316 @@
     <hr/>
     <pre>
 
-    //code
-    1 - Simple Table
-    &lt;table width="40%" height="100" border="2" bordercolor="red" cellspacing="2" cellpadding="2"&gt;
-        &lt;!--1 row--&gt;
-        &lt;tr&gt;
-            &lt;!--coloumns--&gt;
-            &lt;td&gt;hello&lt;/td&gt;
-            &lt;td&gt;welcome&lt;/td&gt;
-        &lt;/tr&gt;
+        //code
+        1 - Simple Table
+        &lt;table width="40%" height="100" border="2" bordercolor="red" cellspacing="2" cellpadding="2"&gt;
+            &lt;!--1 row--&gt;
+            &lt;tr&gt;
+                &lt;!--coloumns--&gt;
+                &lt;td&gt;hello&lt;/td&gt;
+                &lt;td&gt;welcome&lt;/td&gt;
+            &lt;/tr&gt;
+        
+            &lt;!--2 row--&gt;
+            &lt;tr&gt;
+                &lt;!--columns--&gt;
+                &lt;td&gt;bye&lt;/td&gt;
+                &lt;td&gt;see yaa&lt;/td&gt;
+            &lt;/tr&gt;
     
-        &lt;!--2 row--&gt;
-        &lt;tr&gt;
+        &lt;/table&gt;
+
+        2 - Nested Tables
+        &lt;!--parent--&gt;
+        &lt;table width="60%" height="100" border="10" bordercolor="green" cellspacing="8" cellpadding="10"&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;!--child--&gt;
+                
+                    &lt;table width="100%" height="100" border="10" bordercolor="red" cellspacing="8" cellpadding="10"&gt;
+                    
+                        &lt;!--1 row--&gt;
+                        &lt;tr&gt;
+                            &lt;!--coloumns--&gt;
+                            &lt;td&gt;hello&lt;/td&gt;
+                            &lt;td&gt;welcome&lt;/td&gt;
+                        &lt;/tr&gt;
+                        
+                        &lt;!--2 row--&gt;
+                        &lt;tr&gt;
+                            &lt;!--columns--&gt;
+                            &lt;td&gt;bye&lt;/td&gt;
+                            &lt;td&gt;see yaa&lt;/td&gt;
+                        &lt;/tr&gt;
+
+                    &lt;/table&gt;
+
+                &lt;/td&gt;
+
+            &lt;/tr&gt;
+        &lt;/table&gt;
+
+        3 -merging cells
+        &lt;table width="40%" height="100" border="2" bordercolor="red" cellspacing="2" cellpadding="2"&gt;
+            &lt;!--1 row--&gt;
+            &lt;tr&gt;
+            &lt;!--coloumns--&gt;
+            &lt;!--row where we want to merge 2 bcz 2 columns--&gt;
+            &lt;td colspan="2"&gt;hello&lt;/td&gt;
+            &lt;!--delete the uncompatible row--&gt;
+            &lt;/tr&gt;
+        
+            &lt;!--2 row--&gt;
+            &lt;tr&gt;
             &lt;!--columns--&gt;
             &lt;td&gt;bye&lt;/td&gt;
             &lt;td&gt;see yaa&lt;/td&gt;
-        &lt;/tr&gt;
- 
-    &lt;/table&gt;
+            &lt;/tr&gt;
+    
+        &lt;/table&gt;
 
-    2 - Nested Tables
-    &lt;!--parent--&gt;
-    &lt;table width="60%" height="100" border="10" bordercolor="green" cellspacing="8" cellpadding="10"&gt;
-        &lt;tr&gt;
-            &lt;td&gt;
-                &lt;!--child--&gt;
-            
-                &lt;table width="100%" height="100" border="10" bordercolor="red" cellspacing="8" cellpadding="10"&gt;
+        4 - cell alignement
+        &lt;table width="40%" height="100" border="2" bordercolor="red" cellspacing="2" cellpadding="2" background=""&gt;
+            &lt;!--1 row--&gt;
+            &lt;tr&gt;
+            &lt;!--coloumns--&gt;
+            &lt;td align="center"&gt;hello&lt;/td&gt;
+            &lt;td align="justify"&gt;welcome&lt;/td&gt;
+            &lt;/tr&gt;
+        
+            &lt;!--2 row--&gt;
+            &lt;tr&gt;
+            &lt;!--columns--&gt;
+            &lt;td align="left"&gt;bye&lt;/td&gt;
+            &lt;td align="right"&gt;see yaa&lt;/td&gt;
+            &lt;/tr&gt;
+    
+        &lt;/table&gt;
+
+        //output
+        
+        1 - Simple table
+        <table width="40%" height="100" border="2" bordercolor="red" cellspacing="2" cellpadding="2">
+            <!--1 row-->
+            <tr>
+            <!--coloumns-->
+            <td>hello</td>
+            <td>welcome</td>
+            </tr>
+        
+            <!--2 row-->
+            <tr>
+            <!--columns-->
+            <td>bye</td>
+            <td>see yaa</td>
+            </tr>
+        
+        </table>
+
+        2 - nested tables
+        <!--parent-->
+        <table width="60%" height="100" border="10" bordercolor="green" cellspacing="8" cellpadding="10">
+            <tr>
+                <td>
+                    <!--child-->
                 
-                    &lt;!--1 row--&gt;
-                    &lt;tr&gt;
-                        &lt;!--coloumns--&gt;
-                        &lt;td&gt;hello&lt;/td&gt;
-                        &lt;td&gt;welcome&lt;/td&gt;
-                    &lt;/tr&gt;
+                    <table width="100%" height="100" border="10" bordercolor="red" cellspacing="8" cellpadding="10">
                     
-                    &lt;!--2 row--&gt;
-                    &lt;tr&gt;
-                        &lt;!--columns--&gt;
-                        &lt;td&gt;bye&lt;/td&gt;
-                        &lt;td&gt;see yaa&lt;/td&gt;
-                    &lt;/tr&gt;
+                        <!--1 row-->
+                        <tr>
+                            <!--coloumns-->
+                            <td>hello</td>
+                            <td>welcome</td>
+                        </tr>
+                        
+                        <!--2 row-->
+                        <tr>
+                            <!--columns-->
+                            <td>bye</td>
+                            <td>see yaa</td>
+                        </tr>
 
-                &lt;/table&gt;
+                    </table>
 
-            &lt;/td&gt;
+                </td>
 
-        &lt;/tr&gt;
-    &lt;/table&gt;
+            </tr>
 
-    3 -merging cells
-    &lt;table width="40%" height="100" border="2" bordercolor="red" cellspacing="2" cellpadding="2"&gt;
-        &lt;!--1 row--&gt;
-        &lt;tr&gt;
-        &lt;!--coloumns--&gt;
-        &lt;!--row where we want to merge 2 bcz 2 columns--&gt;
-        &lt;td colspan="2"&gt;hello&lt;/td&gt;
-        &lt;!--delete the uncompatible row--&gt;
-        &lt;/tr&gt;
-    
-        &lt;!--2 row--&gt;
-        &lt;tr&gt;
-        &lt;!--columns--&gt;
-        &lt;td&gt;bye&lt;/td&gt;
-        &lt;td&gt;see yaa&lt;/td&gt;
-        &lt;/tr&gt;
- 
-    &lt;/table&gt;
+        </table>
 
-    4 - cell alignement
-    &lt;table width="40%" height="100" border="2" bordercolor="red" cellspacing="2" cellpadding="2" background=""&gt;
-        &lt;!--1 row--&gt;
-        &lt;tr&gt;
-        &lt;!--coloumns--&gt;
-        &lt;td align="center"&gt;hello&lt;/td&gt;
-        &lt;td align="justify"&gt;welcome&lt;/td&gt;
-        &lt;/tr&gt;
-    
-        &lt;!--2 row--&gt;
-        &lt;tr&gt;
-        &lt;!--columns--&gt;
-        &lt;td align="left"&gt;bye&lt;/td&gt;
-        &lt;td align="right"&gt;see yaa&lt;/td&gt;
-        &lt;/tr&gt;
- 
-    &lt;/table&gt;
+        3 - merging cells
+        <table width="40%" height="100" border="2" bordercolor="red" cellspacing="2" cellpadding="2">
+            <!--1 row-->
+            <tr>
+            <!--coloumns-->
+            <!--row where we want to merge 2 bcz 2 columns-->
+            <td colspan="2">hello</td>
+            <!--delete the uncompatible row-->
+            </tr>
+        
+            <!--2 row-->
+            <tr>
+            <!--columns-->
+            <td>bye</td>
+            <td>see yaa</td>
+            </tr>
+        
+        </table>
 
-    //output
-    
-    1 - Simple table
-    <table width="40%" height="100" border="2" bordercolor="red" cellspacing="2" cellpadding="2">
-        <!--1 row-->
-        <tr>
-           <!--coloumns-->
-           <td>hello</td>
-           <td>welcome</td>
-        </tr>
-     
-        <!--2 row-->
-        <tr>
-           <!--columns-->
-           <td>bye</td>
-           <td>see yaa</td>
-        </tr>
-     
-     </table>
+        
+        4 - cell alignement
+        <table width="40%" height="100" border="2" bordercolor="red" cellspacing="2" cellpadding="2" background="">
+            <!--1 row-->
+            <tr>
+            <!--coloumns-->
+            <td align="center">hello</td>
+            <td align="justify">welcome</td>
+            </tr>
+        
+            <!--2 row-->
+            <tr>
+            <!--columns-->
+            <td align="left">bye</td>
+            <td align="right">see yaa</td>
+            </tr>
+        
+        </table>
 
-    2 - nested tables
-     <!--parent-->
-    <table width="60%" height="100" border="10" bordercolor="green" cellspacing="8" cellpadding="10">
-        <tr>
-            <td>
-                <!--child-->
+    </pre>
+
+    <!--Forms-->
+    <hr/>
+    <h2>Forms</h2>
+    <hr/>
+    <pre>
+        
+        //code 
+
+        &lt;form name="employ" action="submit.php" method="post"&gt;
+            &lt;fieldset&gt;
+            &lt;legend&gt;Employement application&lt;/legend&gt;
+        
+            &lt;div&gt;
+                &lt;label for="first_name"&gt; First Name : &lt;/label&gt;
+                &lt;input type="text" name="first_name" id="first_name""value="" maxlength="50"/&gt;  
+            &lt;/div&gt;
+        
+            &lt;div&gt;
+                &lt;label for="last_name"&gt;Last Name : &lt;/label&gt;
+                &lt;input type="text" name="last_name" id="last_name" value="" maxlength="50"/&gt;
+            &lt;/div&gt;
+        
+            &lt;div&gt;
+                &lt;label for="position"&gt;Position : &lt;/label&gt;
+                &lt;select name="position" id="position"&gt;
+                    &lt;option value="accountant"&gt;Accountant&lt;/option&gt;
+                    &lt;option value="admin"&gt;Administrator&lt;/option&gt;
+                    &lt;option value="receptionist"&gt;Receptionist&lt;/option&gt;
+                    &lt;option value="supervisor"&gt;Supervisor&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        
+            &lt;div&gt;
+                &lt;label for="experience_lvl"&gt;Experience Level : &lt;/label&gt;
+                &lt;select name="experience_level" id="experience_lvl"&gt;
+                    &lt;option value="entry"&gt;Entry&lt;/option&gt;
+                    &lt;option value="Medium"&gt;Medium&lt;/option&gt;
+                    &lt;option value="High"&gt;High&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        
+            &lt;div&gt;
+                &lt;label for="employement_status"&gt;Employement Status : &lt;/label&gt;
+                &lt;input type="radio" name="employement_status" id="employement_status" value="employed"&gt;Employed
+                &lt;input type="radio" name="employement_status" id="employement_status" value="unemployed"&gt;Unemployed
+                &lt;input type="radio" name="employement_status" id="employement_status" value="student"&gt;Student
+            &lt;/div&gt;
+        
+            &lt;div&gt;
+                &lt;label for="job_type"&gt;Job Type : &lt;/label&gt;
+                &lt;input type="checkbox" name="job_type" id="job_type" value="full_time"&gt;Full Time
+                &lt;input type="checkbox" name="job_type" id="job_type" value="part_time"&gt;Part time
+                &lt;input type="checkbox" name="job_type" id="job_type" value="contract"&gt;Contract
+            &lt;/div&gt;
+        
+            &lt;div&gt;
+                &lt;label for="comments"&gt;Comments : &lt;/label&gt;
+                &lt;textarea name="comments" id="comments" cols="50" rows="10"&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+        
+            &lt;div&gt;
+                &lt;input type="submit" name="submit_btn" value="submit"&gt;
+                &lt;input type="reset" name="reset_btn" value="reset"&gt;
+            &lt;/div&gt;
+        
+            &lt;/fieldset&gt;
+        &lt;/form&gt;
             
-                <table width="100%" height="100" border="10" bordercolor="red" cellspacing="8" cellpadding="10">
-                
-                    <!--1 row-->
-                    <tr>
-                        <!--coloumns-->
-                        <td>hello</td>
-                        <td>welcome</td>
-                    </tr>
-                    
-                    <!--2 row-->
-                    <tr>
-                        <!--columns-->
-                        <td>bye</td>
-                        <td>see yaa</td>
-                    </tr>
 
-                </table>
+        
+        //output
 
-            </td>
+        <!-- Form with fieldset, legend, and label -->
+        <form name="employ" action="submit.php" method="post">
+            <fieldset>
+            <legend>Employement application</legend>
 
-        </tr>
+            <div>
+                <label for="first_name"> First Name : </label>
+                <input type="text" name="first_name" id="first_name""value="" maxlength="50"/>  
+            </div>
 
-    </table>
+            <div>
+                <label for="last_name">Last Name : </label>
+                <input type="text" name="last_name" id="last_name" value="" maxlength="50"/>
+            </div>
 
-    3 - merging cells
-    <table width="40%" height="100" border="2" bordercolor="red" cellspacing="2" cellpadding="2">
-        <!--1 row-->
-        <tr>
-           <!--coloumns-->
-           <!--row where we want to merge 2 bcz 2 columns-->
-           <td colspan="2">hello</td>
-           <!--delete the uncompatible row-->
-        </tr>
-     
-        <!--2 row-->
-        <tr>
-           <!--columns-->
-           <td>bye</td>
-           <td>see yaa</td>
-        </tr>
-     
-     </table>
+            <div>
+                <label for="position">Position : </label>
+                <select name="position" id="position">
+                    <option value="accountant">Accountant</option>
+                    <option value="admin">Administrator</option>
+                    <option value="receptionist">Receptionist</option>
+                    <option value="supervisor">Supervisor</option>
+                </select>
+            </div>
 
-    
-    4 - cell alignement
-    <table width="40%" height="100" border="2" bordercolor="red" cellspacing="2" cellpadding="2" background="">
-        <!--1 row-->
-        <tr>
-           <!--coloumns-->
-           <td align="center">hello</td>
-           <td align="justify">welcome</td>
-        </tr>
-     
-        <!--2 row-->
-        <tr>
-           <!--columns-->
-           <td align="left">bye</td>
-           <td align="right">see yaa</td>
-        </tr>
-     
-     </table>
+            <div>
+                <label for="experience_lvl">Experience Level : </label>
+                <select name="experience_level" id="experience_lvl">
+                    <option value="entry">Entry</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+            </div>
 
+            <div>
+                <label for="employement_status">Employement Status : </label>
+                <input type="radio" name="employement_status" id="employement_status" value="employed">Employed
+                <input type="radio" name="employement_status" id="employement_status" value="unemployed">Unemployed
+                <input type="radio" name="employement_status" id="employement_status" value="student">Student
+            </div>
+
+            <div>
+                <label for="job_type">Job Type : </label>
+                <input type="checkbox" name="job_type" id="job_type" value="full_time">Full Time
+                <input type="checkbox" name="job_type" id="job_type" value="part_time">Part time
+                <input type="checkbox" name="job_type" id="job_type" value="contract">Contract
+            </div>
+
+            <div>
+                <label for="comments">Comments : </label>
+                <textarea name="comments" id="comments" cols="50" rows="10"></textarea>
+            </div>
+
+            <div>
+                <input type="submit" name="submit_btn" value="submit">
+                <input type="reset" name="reset_btn" value="reset">
+            </div>
+
+            </fieldset>
+        </form>
+    </pre>
 
 </body>
 </html>
