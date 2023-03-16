@@ -562,6 +562,7 @@
 
         
         //output
+
         <code>
             <!-- Form with fieldset, legend, and label -->
             <form name="employ" action="submit.php" method="post">
@@ -642,6 +643,7 @@
         &lt;/map&gt;
 
         //output
+
         <code>
             <img src="https://picsum.photos/id/237/200/300" alt="imagemap example" usemap="#left-eye-map" />
             <map name="left-eye-map">
@@ -658,6 +660,7 @@
     <pre>
 
         //code
+
         &lt;figure&gt;
             &lt;figcaption&gt;Listen to Surat Fatiha&lt;/figcaption&gt;
             &lt;audio
@@ -670,6 +673,7 @@
         &lt;/figure&gt;
         
         //output
+
         <code>
             <figure>
                 <figcaption>Listen to Surat Fatiha</figcaption>
@@ -684,6 +688,8 @@
         </code>
 
     </pre>
+
+
     <!--Videos-->
     <hr/>
     <h2>Videos</h2>
@@ -691,6 +697,7 @@
     <pre>
 
         //code
+
         &lt;figure&gt;
             &lt;figcaption&gt;Beautiful timelapse&lt;/figcaption&gt;
             &lt;video controls width="250" autoplay="true"&gt;
@@ -707,10 +714,11 @@
 
 
         //output
+
         <code>
             <figure>
                 <figcaption>Beautiful timelapse</figcaption>
-                <video controls width="250" autoplay="true">
+                <video controls width="250" autoplay="true" loop="true">
                     
                     <source src="/sample_video.mp4" type="video/webm">
             
@@ -725,7 +733,61 @@
 
     </pre>
 
+    <!--Canvas-->
+    <hr/>
+    <h2>Canvas</h2>
+    <hr/>
+    <pre>
+        //code
+
+        &lt;canvas width="300" height="300" style="background-color: blue;"&gt;
+            An alternative text describing what your canvas displays.
+        &lt;/canvas&gt;
+
+
+        //output
+
+        <code>
+            <canvas width="300" height="300" style="background-color: blue;">
+                An alternative text describing what your canvas displays.
+            </canvas>
+        </code>
+
+    </pre>
+
+    <!--Objects-->
+    <hr/>
+    <h2>Objects</h2>
+    <hr/>
+    <pre>
+
+        //code
+        <!-- Other Formats 
+        application/msword : MS Doc Files
+        application/x-java-applet : Java Applet
+        audio/mpeg : MP3s
+        image/png : PNGs
+        image/jpeg : JPEGs
+        image/gif : GIFS
+        image/svg+xml : SVG Vector images
+        text/plain : Text
+        video/mp4 : MP4s
+        video/x-msvideo : AVIs
+        video/x-msv-wmv : WMVs
+        video/quicktime : MOVs
+        -->
+        &lt;object data="https://picsum.photos/" type="text/html" width="500" height="600"&gt;&lt;/object&gt;
+        
+        //output
+        
+        <object data="https://picsum.photos/" type="text/html" width="500" height="600"></object>
+
+    </pre>
+
+
+
 </body>
+
 </html>
 
 
