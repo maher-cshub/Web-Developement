@@ -399,92 +399,95 @@
 
         //output
         
-        1 - Simple table
-        <table width="40%" height="100" border="2" bordercolor="red" cellspacing="2" cellpadding="2">
-            <!--1 row-->
-            <tr>
-            <!--coloumns-->
-            <td>hello</td>
-            <td>welcome</td>
-            </tr>
-        
-            <!--2 row-->
-            <tr>
-            <!--columns-->
-            <td>bye</td>
-            <td>see yaa</td>
-            </tr>
-        
-        </table>
-
-        2 - nested tables
-        <!--parent-->
-        <table width="60%" height="100" border="10" bordercolor="green" cellspacing="8" cellpadding="10">
-            <tr>
-                <td>
-                    <!--child-->
-                
-                    <table width="100%" height="100" border="10" bordercolor="red" cellspacing="8" cellpadding="10">
+        <code>
+            1 - Simple table
+            <table width="40%" height="100" border="2" bordercolor="red" cellspacing="2" cellpadding="2">
+                <!--1 row-->
+                <tr>
+                <!--coloumns-->
+                <td>hello</td>
+                <td>welcome</td>
+                </tr>
+            
+                <!--2 row-->
+                <tr>
+                <!--columns-->
+                <td>bye</td>
+                <td>see yaa</td>
+                </tr>
+            
+            </table>
+    
+            2 - nested tables
+            <!--parent-->
+            <table width="60%" height="100" border="10" bordercolor="green" cellspacing="8" cellpadding="10">
+                <tr>
+                    <td>
+                        <!--child-->
                     
-                        <!--1 row-->
-                        <tr>
-                            <!--coloumns-->
-                            <td>hello</td>
-                            <td>welcome</td>
-                        </tr>
+                        <table width="100%" height="100" border="10" bordercolor="red" cellspacing="8" cellpadding="10">
                         
-                        <!--2 row-->
-                        <tr>
-                            <!--columns-->
-                            <td>bye</td>
-                            <td>see yaa</td>
-                        </tr>
+                            <!--1 row-->
+                            <tr>
+                                <!--coloumns-->
+                                <td>hello</td>
+                                <td>welcome</td>
+                            </tr>
+                            
+                            <!--2 row-->
+                            <tr>
+                                <!--columns-->
+                                <td>bye</td>
+                                <td>see yaa</td>
+                            </tr>
+    
+                        </table>
+    
+                    </td>
+    
+                </tr>
+    
+            </table>
+    
+            3 - merging cells
+            <table width="40%" height="100" border="2" bordercolor="red" cellspacing="2" cellpadding="2">
+                <!--1 row-->
+                <tr>
+                <!--coloumns-->
+                <!--row where we want to merge 2 bcz 2 columns-->
+                <td colspan="2">hello</td>
+                <!--delete the uncompatible row-->
+                </tr>
+            
+                <!--2 row-->
+                <tr>
+                <!--columns-->
+                <td>bye</td>
+                <td>see yaa</td>
+                </tr>
+            
+            </table>
+    
+            
+            4 - cell alignement
+            <table width="40%" height="100" border="2" bordercolor="red" cellspacing="2" cellpadding="2" background="">
+                <!--1 row-->
+                <tr>
+                <!--coloumns-->
+                <td align="center">hello</td>
+                <td align="justify">welcome</td>
+                </tr>
+            
+                <!--2 row-->
+                <tr>
+                <!--columns-->
+                <td align="left">bye</td>
+                <td align="right">see yaa</td>
+                </tr>
+            
+            </table>
+        </code>
 
-                    </table>
-
-                </td>
-
-            </tr>
-
-        </table>
-
-        3 - merging cells
-        <table width="40%" height="100" border="2" bordercolor="red" cellspacing="2" cellpadding="2">
-            <!--1 row-->
-            <tr>
-            <!--coloumns-->
-            <!--row where we want to merge 2 bcz 2 columns-->
-            <td colspan="2">hello</td>
-            <!--delete the uncompatible row-->
-            </tr>
-        
-            <!--2 row-->
-            <tr>
-            <!--columns-->
-            <td>bye</td>
-            <td>see yaa</td>
-            </tr>
-        
-        </table>
-
-        
-        4 - cell alignement
-        <table width="40%" height="100" border="2" bordercolor="red" cellspacing="2" cellpadding="2" background="">
-            <!--1 row-->
-            <tr>
-            <!--coloumns-->
-            <td align="center">hello</td>
-            <td align="justify">welcome</td>
-            </tr>
-        
-            <!--2 row-->
-            <tr>
-            <!--columns-->
-            <td align="left">bye</td>
-            <td align="right">see yaa</td>
-            </tr>
-        
-        </table>
 
     </pre>
 
@@ -559,67 +562,167 @@
 
         
         //output
+        <code>
+            <!-- Form with fieldset, legend, and label -->
+            <form name="employ" action="submit.php" method="post">
+                <fieldset>
+                <legend>Employement application</legend>
 
-        <!-- Form with fieldset, legend, and label -->
-        <form name="employ" action="submit.php" method="post">
-            <fieldset>
-            <legend>Employement application</legend>
+                <div>
+                    <label for="first_name"> First Name : </label>
+                    <input type="text" name="first_name" id="first_name""value="" maxlength="50"/>  
+                </div>
 
-            <div>
-                <label for="first_name"> First Name : </label>
-                <input type="text" name="first_name" id="first_name""value="" maxlength="50"/>  
-            </div>
+                <div>
+                    <label for="last_name">Last Name : </label>
+                    <input type="text" name="last_name" id="last_name" value="" maxlength="50"/>
+                </div>
 
-            <div>
-                <label for="last_name">Last Name : </label>
-                <input type="text" name="last_name" id="last_name" value="" maxlength="50"/>
-            </div>
+                <div>
+                    <label for="position">Position : </label>
+                    <select name="position" id="position">
+                        <option value="accountant">Accountant</option>
+                        <option value="admin">Administrator</option>
+                        <option value="receptionist">Receptionist</option>
+                        <option value="supervisor">Supervisor</option>
+                    </select>
+                </div>
 
-            <div>
-                <label for="position">Position : </label>
-                <select name="position" id="position">
-                    <option value="accountant">Accountant</option>
-                    <option value="admin">Administrator</option>
-                    <option value="receptionist">Receptionist</option>
-                    <option value="supervisor">Supervisor</option>
-                </select>
-            </div>
+                <div>
+                    <label for="experience_lvl">Experience Level : </label>
+                    <select name="experience_level" id="experience_lvl">
+                        <option value="entry">Entry</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                </div>
 
-            <div>
-                <label for="experience_lvl">Experience Level : </label>
-                <select name="experience_level" id="experience_lvl">
-                    <option value="entry">Entry</option>
-                    <option value="Medium">Medium</option>
-                    <option value="High">High</option>
-                </select>
-            </div>
+                <div>
+                    <label for="employement_status">Employement Status : </label>
+                    <input type="radio" name="employement_status" id="employement_status" value="employed">Employed
+                    <input type="radio" name="employement_status" id="employement_status" value="unemployed">Unemployed
+                    <input type="radio" name="employement_status" id="employement_status" value="student">Student
+                </div>
 
-            <div>
-                <label for="employement_status">Employement Status : </label>
-                <input type="radio" name="employement_status" id="employement_status" value="employed">Employed
-                <input type="radio" name="employement_status" id="employement_status" value="unemployed">Unemployed
-                <input type="radio" name="employement_status" id="employement_status" value="student">Student
-            </div>
+                <div>
+                    <label for="job_type">Job Type : </label>
+                    <input type="checkbox" name="job_type" id="job_type" value="full_time">Full Time
+                    <input type="checkbox" name="job_type" id="job_type" value="part_time">Part time
+                    <input type="checkbox" name="job_type" id="job_type" value="contract">Contract
+                </div>
 
-            <div>
-                <label for="job_type">Job Type : </label>
-                <input type="checkbox" name="job_type" id="job_type" value="full_time">Full Time
-                <input type="checkbox" name="job_type" id="job_type" value="part_time">Part time
-                <input type="checkbox" name="job_type" id="job_type" value="contract">Contract
-            </div>
+                <div>
+                    <label for="comments">Comments : </label>
+                    <textarea name="comments" id="comments" cols="50" rows="10"></textarea>
+                </div>
 
-            <div>
-                <label for="comments">Comments : </label>
-                <textarea name="comments" id="comments" cols="50" rows="10"></textarea>
-            </div>
+                <div>
+                    <input type="submit" name="submit_btn" value="submit">
+                    <input type="reset" name="reset_btn" value="reset">
+                </div>
 
-            <div>
-                <input type="submit" name="submit_btn" value="submit">
-                <input type="reset" name="reset_btn" value="reset">
-            </div>
+                </fieldset>
+            </form>
+        </code>
 
-            </fieldset>
-        </form>
+    </pre>
+
+    <!--Images-->
+    <hr/>
+    <h2>Images</h2>
+    <hr/>
+    <pre>
+
+        //code
+
+        &lt;img src="https://picsum.photos/id/237/200/300" alt="imagemap example" usemap="#left-eye-map" /&gt;
+
+        &lt;map name="left-eye-map"&gt;
+            &lt;area target="_blank" alt="" title="" href="https://www.google.com/dog eye" coords="106,118,85,126,118,146" shape="poly"&gt;
+        &lt;/map&gt;
+
+        //output
+        <code>
+            <img src="https://picsum.photos/id/237/200/300" alt="imagemap example" usemap="#left-eye-map" />
+            <map name="left-eye-map">
+                <area target="_blank" alt="" title="" href="https://www.google.com/search?q=dog+eye" coords="106,118,85,126,118,146" shape="poly">
+            </map>
+        </code>
+
+    </pre>
+
+    <!--Audios-->
+    <hr/>
+    <h2>Audio</h2>
+    <hr/>
+    <pre>
+
+        //code
+        &lt;figure&gt;
+            &lt;figcaption&gt;Listen to Surat Fatiha&lt;/figcaption&gt;
+            &lt;audio
+                controls
+                src="https://server7.mp3quran.net/basit/Almusshaf-Al-Mojawwad/001.mp3"&gt;
+                    &lt;a href="https://server7.mp3quran.net/basit/Almusshaf-Al-Mojawwad/001.mp3"&gt;
+                        Download audio
+                    &lt;/a&gt;
+            &lt;/audio&gt;
+        &lt;/figure&gt;
+        
+        //output
+        <code>
+            <figure>
+                <figcaption>Listen to Surat Fatiha</figcaption>
+                <audio
+                    controls
+                    src="https://server7.mp3quran.net/basit/Almusshaf-Al-Mojawwad/001.mp3">
+                        <a href="https://server7.mp3quran.net/basit/Almusshaf-Al-Mojawwad/001.mp3">
+                            Download audio
+                        </a>
+                </audio>
+            </figure>
+        </code>
+
+    </pre>
+    <!--Videos-->
+    <hr/>
+    <h2>Videos</h2>
+    <hr/>
+    <pre>
+
+        //code
+        &lt;figure&gt;
+            &lt;figcaption&gt;Beautiful timelapse&lt;/figcaption&gt;
+            &lt;video controls width="250" autoplay="true"&gt;
+                
+                &lt;source src="/sample_video.mp4" type="video/webm"&gt;
+        
+                Download the
+                &lt;a href="/sample_video.mp4"&gt;WEBM&lt;/a&gt;
+                or
+                &lt;a href="/sample_video.mp4"&gt;MP4&lt;/a&gt;
+                video.
+            &lt;/video&gt;
+        &lt;/figure&gt;
+
+
+        //output
+        <code>
+            <figure>
+                <figcaption>Beautiful timelapse</figcaption>
+                <video controls width="250" autoplay="true">
+                    
+                    <source src="/sample_video.mp4" type="video/webm">
+            
+                    Download the
+                    <a href="/sample_video.mp4">WEBM</a>
+                    or
+                    <a href="/sample_video.mp4">MP4</a>
+                    video.
+                </video>
+            </figure>
+        </code>
+
     </pre>
 
 </body>
