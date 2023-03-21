@@ -6,6 +6,7 @@ let get_main_results = async(baseURL)=>{
     try {
         const fetch_response =  await fetch(`${baseURL}/languages`,{method: "GET"})    
         const data = await fetch_response.json()
+        console.log(data)
         let html = ""
         data["language"].forEach(element => {
             datafetched.push(element)
